@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+img{
+    max-width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-auto-rows: 100px;
+    grid-gap: 0.5rem;
+    width: 100%;
+}
+
+.mainTitle h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 19vw;
+    color: #1b1b1b;
+    background-color: #fafafa;
+
+    mix-blend-mode:darken;
+}
+
+.particleBg {
+  background-color: #1b1b1b;
+  width: 100%
+}
+
+.skewBox {
+    transform: skew(0deg, -20deg);
+    grid-row: 3 / span 5;
+    grid-column: 1 / span 10;
+    background-color: #1b1b1b;
+    z-index: -1;
+    mix-blend-mode: difference;
+}
+
+#header{
+    grid-area: 2 / 2 / 4 / 10;
+    mix-blend-mode: lighten;
+    line-height: 1;
+    z-index: 1;
+}
+
+#aboutContainer{
+    grid-area: 10 / 2 / 6 / 10;
+    background: #fafafa;
+    z-index: 1;
+    text-align: right;
+    padding: 2%;
+}
+
+.aboutTitle{
+    font-size: 8vw;
+    grid-area: 1 / 1 / 4 / 10;
+    margin-top: -8%;
+}
+
+.aboutText{
+    grid-area: 2 / 2 / 4 / 10;
+}
+
+.portfolioContainer{
+    grid-area:  10 / 2 / 10 / 10;
+
+}
+
+.portfolioTitle{
+    font-size: 8vw;
+    grid-area: 1 / 1 / 4 / 10;
+    margin-top: -6%;
+    color:  #fafafa;
+    background-color: #1b1b1b;
+}
